@@ -105,10 +105,28 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
     
     
-    /* ====================================== */
-    /* Naming the column lines */
     
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     
+}
 
+
+/* ====================================== */
+/* Naming the column lines */
+
+#container3 {
+    width: 95vw;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    outline: 8px solid #4843d4 ;
+    display: grid; 
+
+    /* use this naming convention on column lines */
+    grid-template-columns: [col-start]1fr [col-2]1fr [col-3]1fr [col-end];
+
+    /* set the row sizes like this:
+    1st row is 100px, 2nd row is 50px */
+    grid-template-rows: 100px 50px;
+
+    /* any excess boxes will implicitly have its size filled in on the remaining spaces */
 }
