@@ -32,17 +32,83 @@ h1 {
     text-align: center;
 }
 
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222222;
+    text-align: center;
+    box-shadow: 1px 2px 3px grey;
+    border-radius: 8px;
+    color: #222;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9d423;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
 #container {
     width: 95vw;
     height: 60vh;
     margin: 0 auto;
     background-color: whitesmoke;
     outline: 8px solid #4843d4 ;
-    display: grid;
-    grid-template-columns: 
-    [col-start] 1fr
-    [col-2]1fr
-    [col-3]1fr
-    [col-end];
-    grid-template-rows: repeat(3, 100px);
+    display: grid;      
+
+    /* You can use pixels to asign the size of the columns the columns, and add auto at the end to fill the space
+    grid-template-columns: 200px 200px 200px auto; */
+
+    /* You can also use percentages
+    grid-template-columns: 50% 25% 25%; */
+
+    /* You can also use fraction or fr
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    
+    /* or use minmax for a certain block
+    grid-template-columns: 1fr minmax(300px, 1fr); */
+    
+    /* or make it repeating fractional sizes or repeating pixel sizes
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(3, 300px); 
+    */
+/* 
+    or use repeat function if you are using grid for responsive layout and you want the space to fill in automatically with the same box sizes 
+    
+    grid-template-columns: repeat(auto-fill, 300px);
+    */
+
+   
 }   
+
+
+/* ================================= */
+
+#container2 {
+    width: 95vw;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    outline: 8px solid #4843d4 ;
+    display: grid;   
+    
+    /* Just add minmax to see how it fills the container. view it in inspection and grid in browser
+    
+    auto-fill fills in an imaginary cell when you increase browser size
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    
+    /* auto-fit expands the boxes as you expand the browser
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    
+    
+    /* ====================================== */
+    /* Naming the column lines */
+    
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    
+
+}
