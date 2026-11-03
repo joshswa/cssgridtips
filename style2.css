@@ -129,4 +129,15 @@ h1 {
     grid-template-rows: 100px 50px;
 
     /* any excess boxes will implicitly have its size filled in on the remaining spaces */
+/* 
+    to make it not implicitly sized by the browser, do this 
+    grid-auto-rows:50px 
+         or
+    grid-auto-column    
+    */
+
+    /* ======================== */
+    
+    to make boxes stack up by column, use this
+    grid-auto-flow: column;
 }
