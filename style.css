@@ -45,6 +45,13 @@ h1 {
     [col-3]1fr
     [col-end];
     grid-template-rows: repeat(3, 100px);
+    
+    /* add gaps between boxes */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    /* or shorthand method is grid-gap
+    grid-gap: (row)px (column)px ; */
 }   
 
 .one {

@@ -138,6 +138,6 @@ h1 {
 
     /* ======================== */
     
-    to make boxes stack up by column, use this
-    grid-auto-flow: column;
+    /* to make boxes stack up by column, use this
+    grid-auto-flow: column; */
 }
