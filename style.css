@@ -27,9 +27,15 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: 80%;
+    
+}
+
 h1 {
     padding: 20px;
     text-align: center;
+    font-weight: 900;
 }
 
 #container {
