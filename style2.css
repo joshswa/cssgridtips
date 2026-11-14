@@ -25,6 +25,12 @@ a {
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
+    padding-bottom: 5px;
+}
+
+a:hover {
+    opacity: 85%;
+    border-bottom: #4843d4 1px solid;
 }
 
 h1 {
