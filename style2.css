@@ -1,11 +1,12 @@
 *{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header{
-    height: 40px;
+    height: 70px;
 }
 
 ul {
