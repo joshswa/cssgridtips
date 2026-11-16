@@ -33,11 +33,14 @@ a:hover {
     opacity: 85%;
     background: green;
     padding: 10px;
+    border-radius: 10px;
+    border-bottom: #4843d4 5px solid;
 }
 
 h1 {
     padding: 20px;
     text-align: center;
+    font-weight: 900;
 }
 
 
