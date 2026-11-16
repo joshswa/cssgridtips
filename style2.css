@@ -31,7 +31,8 @@ a {
 
 a:hover {
     opacity: 85%;
-    border-bottom: #4843d4 1px solid;
+    background: green;
+    padding: 10px;
 }
 
 h1 {
