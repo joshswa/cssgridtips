@@ -68,7 +68,7 @@ h1 {
 .one {
     grid-column: col-start;
     grid-column-end: span col-3; 
-
+    padding: 10px;
 }
 
 .item {
